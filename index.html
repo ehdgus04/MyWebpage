@@ -7,48 +7,43 @@
     <title>Donghyun's Homepage</title>              
     <style>
         h1 {
-            text-align:center;
-            font-size:40px;
+            text-align: center;
         }
-        #copyright {
-            font-size:20px;
-        }
-        #a2 {
-            color:black;
-            text-decoration:none;
-        }
-        #d1 li {
+        #d li {
             display: inline-block;
             border: 1px solid black;
             padding: 10px 20px;
-            background: greenyellow;
+            background: pink
         }
-        #d1 a:link, a:visited{
+        #d a:link, a:visited{
             text-decoration: none;
             color: black;
         }
-        #d1 li:hover{
-            background-color: white;
+        #d li:hover{
+            background-color: skyblue;;
         }
-        #d1 li:active {
-            background-color: pink;
+        #d li:active {
+            background-color: greenyellow;
         }
-        #d1 li:first-child {
+        #d li:first-child {
             border-top-left-radius: 10px;
             border-bottom-left-radius: 10px;
         }
-        #d1 li:last-child {
+        #d li:last-child {
             border-top-right-radius: 10px;
             border-bottom-right-radius: 10px;
         }
-        #d1 ul {
+        #d ul {
+            text-align: center;
+        }
+        #image {
             text-align: center;
         }
     </style>
 </head>
 <body>
-    <div id="d1">
-        <h1><a href="index.html" id="a2">Donghyun's Homepage</a></h1>
+    <div id="d">
+        <h1><a href="index.html" id="a">Donghyun's Homepage</a></h1>
         <ul>
             <li><a href="introduce.html">내 소개</a></li>
             <li><a href="schedule.html">시간표</a></li>
@@ -57,11 +52,12 @@
             <li><a href="signUp.html">회원가입</a></li>
         </ul>
     </div>
-</body><hr><br>
+<hr><br>
 <body>
-    <div style="text-align:center;">
-        <image src="" style="width:600px;height:600px;"></image>
+    <div id="image">
+        <image src="images/제리인사-존중.gif" style="width:600px;height:600px;"></image>
     </div>
-</body><br><hr>
-<body><p id="copyright">copyright gimdong58@gmail.com</p></body>
+<br><hr>
+    <p>copyright gimdong58@gmail.com</p>
+</body>
 </html>
