@@ -4,45 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donghyun's Homepage</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Noto+Serif+Khojki&family=Oswald&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">               
+    <title>Donghyun's Homepage</title>              
     <style>
         h1 {
-            font-family: 'Anton', sans-serif;
             text-align:center;
             font-size:40px;
         }
         #copyright {
-            font-family: 'Playfair Display', serif;
             font-size:20px;
         }
         #a2 {
             color:black;
             text-decoration:none;
         }
-        li{ 
+        #d1 li {
             display: inline-block;
             border: 1px solid black;
-            padding: 10px 50px;
-            margin: 0px 10px;
+            padding: 10px 20px;
+            background: greenyellow;
+        }
+        #d1 a:link, a:visited{
+            text-decoration: none;
+            color: black;
+        }
+        #d1 li:hover{
+            background-color: white;
+        }
+        #d1 li:active {
+            background-color: pink;
+        }
+        #d1 li:first-child {
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        #d1 li:last-child {
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        #d1 ul {
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <div id="d1">
         <h1><a href="index.html" id="a2">Donghyun's Homepage</a></h1>
-        <ul><li><a href="introduce.html">내 소개</a></li>
+        <ul>
+            <li><a href="introduce.html">내 소개</a></li>
             <li><a href="schedule.html">시간표</a></li>
             <li><a href="site.html">자주 가는 사이트</a></li>
-            <li><a href="" class="menu">달력</a></li>
+            <li><a href="calendar.html">달력</a></li>
             <li><a href="signUp.html">회원가입</a></li>
         </ul>
     </div>
