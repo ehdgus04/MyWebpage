@@ -4,13 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donghyun's Homepage</title>             
+    <title>Donghyun's Homepage</title>              
     <style>
         h1 {
             text-align: center;
-        }
-        #log {
-            text-align: right;
         }
         #d li {
             display: inline-block;
@@ -39,15 +36,23 @@
         #d ul {
             text-align: center;
         }
-        #image {
-            text-align: center;
+        table {
+            width: 100%;
+            border-top: 1px solid #444444;
+            border-collapse: collapse;
+        }
+        th, td {
+            border-bottom: 1px solid #444444;
+            padding: 10px;
+        }
+        form div {
+            text-align: right;
         }
     </style>
 </head>
 <body>
     <div id="d">
         <h1>Donghyun's Homepage</h1>
-        <!-- <div id="log"><a href="index.html">HOME</a> | <a href="login.html">LOGIN</a> | <a href="sign_up.html">JOIN</a></div> -->
         <ul>
             <li><a href="index.html">홈</a></li>
             <li><a href="hobby.html">취미</a></li>
@@ -60,9 +65,27 @@
     </div>
 <hr><br>
 <body>
-    <div id="image">
-        <image src="images/제리인사-존중.gif" style="width:600px;height:600px;"></image>
-    </div>
+    <h2>자유게시판</h2>
+    <form>
+        <table>
+            <tr>
+                <th colspan="2">글쓰기</th>
+            </tr>
+            <tr>
+                <td>이름</td><td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>제목</td><td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>내용</td><td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>업로드 파일</td><td><input type="file"></td>
+            </tr>
+        </table><br>
+        <div><button type="submit">완료</button> <button type="button" onclick="location.href='board.html'">목록</button></div>
+    </form>    
 <br><hr>
     <p>copyright gimdong58@gmail.com</p>
 </body>
