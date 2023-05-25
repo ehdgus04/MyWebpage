@@ -1,115 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Document</title>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donghyun's Homepage</title>             
+    <link rel="stylesheet" href="frame.css">
     <style>
-        h1 {
-            text-align:center;
-        }
-        #d li {
-            display: inline-block;
-            border: 1px solid black;
-            padding: 10px 20px;
-            background: pink
-        }
-        #d a:link, a:visited{
-            text-decoration: none;
-            color: black;
-        }
-        #d li:hover{
-            background-color: skyblue;;
-        }
-        #d li:active {
-            background-color: greenyellow;
-        }
-        #d li:first-child {
-            border-top-left-radius: 10px;
-            border-bottom-left-radius: 10px;
-        }
-        #d li:last-child {
-            border-top-right-radius: 10px;
-            border-bottom-right-radius: 10px;
-        }
-        #d ul {
-            text-align: center;
-        }
-        .t1 {
-            border: 1px solid black;
+        #signup {
+            margin-left: auto;
+            margin-right: auto;
+            border-top: 1px solid #444444;
             border-collapse: collapse;
-            width: 950px;
-            height: 300px;
-            table-layout: fixed;
-            word-break: break-all;
-            height: auto;
-        }
-        .t1 td {
-            /* border: 1px dotted black; */
-            width: 150px;
-            height: 50px;
-            /* text-align: center; */
-            empty-cells: hide;
-            vertical-align: middle;
-        }
-        .t1 .c {
             text-align: center;
         }
-        .t1 .text {
-            width:100px;
+        #signup td,th {
+            border-bottom: 1px solid #444444;
+            padding: 20px;
         }
-        .t1 .number {
-            width:70px;
-        }
-        table {
-            margin-left:auto; 
-            margin-right:auto;
+        .content {
+            width: 700px;
+            text-align: left;
         }
         input[type="number"]::-webkit-outer-spin-button,
         input[type="number"]::-webkit-inner-spin-button {
             -webkit-appearance: none;
             margin: 0;
         }
+        .number {
+            width:50px;
+        }
+        .text {
+            width: 100px;
+        }
     </style>
 </head>
 <body>
-    <div id="d">
-        <h1>Donghyun's Homepage</h1>
-        <ul>
-            <li><a href="index.html">홈</a></li>
-            <li><a href="hobby.html">취미</a></li>
-            <li><a href="board.html">게시판</a></li>
-            <li><a href="dev_introduce.html">개발자소개</a></li>
-            <li><a href="calendar.html">달력</a></li>
-            <li><a href="animation.html">애니메이션</a></li>
-            <li><a href="sign_up.html">회원가입</a></li>
-        </ul>
+    <div id="container">
+        <div id="header">
+            <h1>Donghyun's Homepage</h1>
+            <ul>
+                <li><a href="index.html">홈</a></li>
+                <li><a href="interest.html">관심분야</a></li>
+                <li><a href="board.html">게시판</a></li>
+                <li><a href="dev_introduce.html">개발자소개</a></li>
+                <li><a href="calendar.html">달력</a></li>
+                <li><a href="animation.html">애니메이션</a></li>
+                <li><a href="sign_up.html">회원가입</a></li>
+            </ul>
+        </div>
+        <div id="sidebar">
+            <p>USER LOGIN</p>
+            <form>
+                <table id="login">
+                    <tr>
+                        <td><input type="text"></td><td rowspan="2"><button type="submit" id="loginbutton">로그인</button></td>
+                    </tr>
+                    <tr>
+                        <td><input type="password"></td>
+                    </tr>   
+                    <tr><td></td><td></td></tr>
+                    <tr><td></td><td></td></tr>   
+                </table>
+            </form>
+            <a href="sign_up.html"> &nbsp; &nbsp; 회원가입</a>
+            <a href=""> &nbsp; | &nbsp; ID/PW 찾기</a>
+        </div>
+        <div id="content">
+            <h2>회원가입</h2>
+            <form>
+                <table id="signup">
+                    <tr>
+                        <td class="title">아이디</td><td class="content"><input type="text"> <button type="button">중복확인</button> &nbsp;4자~12자리의 영문자, 숫자 / @,#$등 특수문자는 제외</td>
+                    </tr>
+                    <tr>
+                        <td>이름</td><td class="content"><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>이메일</td><td class="content"><input type="text" class="text"> @ <input type="text" class="text">
+                            <select>
+                                <option>직접입력</option>
+                                <option>naver.com</option>
+                                <option>gmail.com</option>
+                                <option>nate.com</option>
+                                <option>hanmail.com</option>
+                                <option>daum.com</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>휴대전화</td><td class="content"><input type=number class="number"> - <input type=number class="number"> - <input type=number class="number"> &nbsp;주문배송문자, ARS 상담/중고매장 이용시 본인확인용으로 사용</td>
+                    </tr>
+                    <tr>
+                        <td>비밀번호</td><td class="content"><input type="password"> &nbsp;영문, 숫자, 특수문자 중 2가지 조합하여 8자~20자리</td>
+                    </tr>
+                    <tr>
+                        <td>비밀번호 재입력</td><td class="content"><input type="password"></td>
+                    </tr>
+                    <tr>
+                        <td>개인정보 유효기간</td><td class="content">1년<input type="radio" name="a" checked>&nbsp;&nbsp;&nbsp;3년<input type="radio" name="a" checked>&nbsp;&nbsp;&nbsp;5년<input type="radio" name="a" checked>&nbsp;&nbsp;&nbsp;탈퇴 시까지<input type="radio" name="a" checked><br><br>
+                        설정된 개인정보 유효기간 동안 로그인 등 이용이 없으면 휴면계정이 되어<br> 개인정보가 별도 분리 보관, 각종 뉴스레터, 메일, 문자를 수신할 수 없습니다</td>
+                    </tr>
+                </table><br>
+                <div style=" text-align: center;">
+                    <button style=" display: inline-block;">회원가입</button>
+                </div>
+            </form><br>
+        </div>
+        <div id="footer">
+            <hr>
+            <p>copyright gimdong58@gmail.com</p>
+        </div>
     </div>
-<hr><br>
-    <table class="t1">
-        <form>
-            <tr><td class="c">이름</td><td><input type=text></td></tr>
-            <tr><td class="c">아이디</td><td><input type=text><br>4자~12자리의 영문자, 숫자 / @,#$등 특수문자는 제외</td></tr>
-            <tr><td class="c">이메일</td><td><input type="text" class="text">@<input type="text" class="text">
-                <select>
-                    <option>직접입력</option>
-                    <option>naver.com</option>
-                    <option>gmail.com</option>
-                    <option>nate.com</option>
-                    <option>hanmail.com</option>
-                    <option>daum.com</option>
-                </select>
-                </td></tr>
-            <tr><td class="c">비밀번호</td><td><input type=password><br>영문, 숫자, 특수문자 중 2가지 조합하여 8자~20자리</td></tr>
-            <tr><td class="c">비밀번호 재입력</td><td><input type=password><br>비밀번호를 다시 한번 입력해주세요.</td></tr>
-            <tr><td class="c">휴대전화</td><td><input type=number class="number">-<input type=number class="number">-<input type=number class="number"><br>주문배송문자, ARS 상담/중고매장 이용시 본인확인용으로 사용</td></tr>
-            <tr><td class="c" colspan="2">개인정보 유호기간<input type="radio" name="a" checked>1년<input type="radio" name="a" checked>3년<input type="radio" name="a" checked>5년<input type="radio" name="a" checked>탈퇴 시까지<input type="radio" name="a" checked><br>
-                설정된 개인정보 유효기간 동안 로그인 등 이용이 없으면 휴면계정이 되어 개인정보가 별도 분리 보관, 각종 뉴스레터, 메일, 문자를 수신할 수 없습니다</td></tr>
-            <tr><td class="c" colspan="2"><button type="submit">가입</button></td></tr>
-        </form>
-    </table>
-<br><hr>
-<p>copyright gimdong58@gmail.com</p>
 </body>
 </html>

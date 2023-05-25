@@ -1,106 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Document</title>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donghyun's Homepage</title>              
+    <link rel="stylesheet" href="frame.css">
     <style>
-        h1 {
-            text-align: center;
-        }
-        #d li {
-            display: inline-block;
-            border: 1px solid black;
-            padding: 10px 20px;
-            background: pink
-        }
-        #d a:link, a:visited{
-            text-decoration: none;
-            color: black;
-        }
-        #d li:hover{
-            background-color: skyblue;;
-        }
-        #d li:active {
-            background-color: greenyellow;
-        }
-        #d li:first-child {
-            border-top-left-radius: 10px;
-            border-bottom-left-radius: 10px;
-        }
-        #d li:last-child {
-            border-top-right-radius: 10px;
-            border-bottom-right-radius: 10px;
-        }
-        #d ul {
-            text-align: center;
-        }
-        table {
-            width: 100%;
+        #content table {
+            margin-left: auto;
+            margin-right: auto;
             border-top: 1px solid #444444;
             border-collapse: collapse;
-        }
-        th, td {
-            border-bottom: 1px solid #444444;
-            padding: 10px;
-        }
-        .board {
-            width: 90px;
             text-align: center;
         }
-        table a {
-            text-decoration: none;
+        #content th, #content td {
+            border-bottom: 1px solid #444444;
+            padding: 20px;
         }
-        form {
-            text-align: right;
-        }
-        #boardInsert {
-            text-align: right;
+        #content table tr .title {
+            text-align: left;
+            width: 500px;
         }
     </style>
 </head>
 <body>
-    <div id="d">
-        <h1>Donghyun's Homepage</h1>
-        <ul>
-            <li><a href="index.html">홈</a></li>
-            <li><a href="hobby.html">취미</a></li>
-            <li><a href="board.html">게시판</a></li>
-            <li><a href="dev_introduce.html">개발자소개</a></li>
-            <li><a href="calendar.html">달력</a></li>
-            <li><a href="animation.html">애니메이션</a></li>
-            <li><a href="sign_up.html">회원가입</a></li>
-        </ul>
+    <div id="container">
+        <div id="header">
+            <h1>Donghyun's Homepage</h1>
+            <ul>
+                <li><a href="index.html">홈</a></li>
+                <li><a href="interest.html">관심분야</a></li>
+                <li><a href="board.html">게시판</a></li>
+                <li><a href="dev_introduce.html">개발자소개</a></li>
+                <li><a href="calendar.html">달력</a></li>
+                <li><a href="animation.html">애니메이션</a></li>
+                <li><a href="sign_up.html">회원가입</a></li>
+            </ul>
+        </div>
+        <div id="sidebar">
+            <p>USER LOGIN</p>
+            <form>
+                <table id="login">
+                    <tr>
+                        <td><input type="text"></td><td rowspan="2"><button type="submit" id="loginbutton">로그인</button></td>
+                    </tr>
+                    <tr>
+                        <td><input type="password"></td>
+                    </tr>  
+                    <tr><td></td><td></td></tr>
+                    <tr><td></td><td></td></tr>    
+                </table>
+            </form>
+            <a href="sign_up.html"> &nbsp; &nbsp; 회원가입</a>
+            <a href=""> &nbsp; | &nbsp; ID/PW 찾기</a>
+        </div>
+        <div id="content">
+            <h2>자유게시판</h2>
+            <div style="text-align:center;">
+                <form>
+                    <input type="text" style="width:400px; height:30px;"> <button type="submit" style="width:80px; height:36px;">검색</button>
+                </form>
+            </div>
+            <br>
+            <table>
+                <tr>
+                    <th>번호</th><th>제목</th><th>글쓴이</th><th>일시</th><th>조회수</th>
+                </tr>
+                <tr>
+                    <td>1</td><td class="title"><a href="board_1.html">안녕하세요</a></td><td>김동현</td><td>2023-05-23</td><td>1</td>
+                </tr>
+                <tr>
+                    <td>2</td><td class="title"><a href="board_1.html">안녕하세요</a></td><td>김동현</td><td>2023-05-23</td><td>1</td>
+                </tr>
+                <tr>
+                    <td>3</td><td class="title"><a href="board_1.html">안녕하세요</a></td><td>김동현</td><td>2023-05-23</td><td>1</td>
+                </tr>
+            </table><br>
+            <div style=" text-align: center;">
+                <button type="button" onclick="location.href='board_insert.html'" style=" display: inline-block;">글쓰기</button>
+            </div><br>
+        </div>
+        <div id="footer">
+            <hr>
+            <p>copyright gimdong58@gmail.com</p>
+        </div>
     </div>
-<hr><br>
-<body>
-    <h2>자유게시판</h2>
-    <form>
-        SELECT 
-        <select>
-            <option>제목</option>
-            <option>글쓴이</option>
-        </select>
-        <input type="text">
-        <button type="submit">검색</button>
-    </form>
-    <br><table>
-        <tr>
-            <th>번호</th><th>제목</th><th>글쓴이</th><th>일시</th><th>조회수</th>
-        </tr>
-        <tr>
-            <td class="board">1</td><td><a href="board_1.html">gd</a></td><td class="board">황대원</td><td class="board">2023-05-23</td><td class="board">1</td>
-        </tr>
-        <tr>
-            <td class="board">2</td><td><a href="board_1.html">gd</a></td><td class="board">황대원</td><td class="board">2023-05-23</td><td class="board">1</td>
-        </tr>
-        <tr>
-            <td class="board">3</td><td><a href="board_1.html">gd</a></td><td class="board">황대원</td><td class="board">2023-05-23</td><td class="board">1</td>
-        </tr>
-    </table><br>
-    <div id="boardInsert"><button type="button" onclick="location.href='board_insert.html'">글쓰기</button></div>
-<br><hr>
-    <p>copyright gimdong58@gmail.com</p>
 </body>
 </html>

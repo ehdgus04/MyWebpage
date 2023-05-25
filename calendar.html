@@ -1,39 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Document</title>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donghyun's Homepage</title>              
+    <link rel="stylesheet" href="frame.css">
     <style>
-        h1 {
-            text-align:center;
-        }
-        #d li {
-            display: inline-block;
-            border: 1px solid black;
-            padding: 10px 20px;
-            background: pink
-        }
-        #d a:link, a:visited{
-            text-decoration: none;
-            color: black;
-        }
-        #d li:hover{
-            background-color: skyblue;;
-        }
-        #d li:active {
-            background-color: greenyellow;
-        }
-        #d li:first-child {
-            border-top-left-radius: 10px;
-            border-bottom-left-radius: 10px;
-        }
-        #d li:last-child {
-            border-top-right-radius: 10px;
-            border-bottom-right-radius: 10px;
-        }
-        #d ul {
+        h2 {
             text-align: center;
         }
         .a1{
@@ -49,6 +21,7 @@
         .a2{
             text-align: center;
             border: 1px solid black;
+            color: red;
             width: 50px;
             height: 20px;
             padding: 10px;
@@ -84,76 +57,99 @@
             margin: 10px;
             float: left;
         }
-        #foot {
-            width: auto;
-            clear: both;
+        fieldset {
+            width: 646px;
+            margin: auto;
         }
     </style>
 </head>
 <body>
-    <div id="d">
-        <h1>Donghyun's Homepage</h1>
-        <ul>
-            <li><a href="index.html">홈</a></li>
-            <li><a href="hobby.html">취미</a></li>
-            <li><a href="board.html">게시판</a></li>
-            <li><a href="dev_introduce.html">개발자소개</a></li>
-            <li><a href="calendar.html">달력</a></li>
-            <li><a href="animation.html">애니메이션</a></li>
-            <li><a href="sign_up.html">회원가입</a></li>
-        </ul>
+    <div id="container">
+        <div id="header">
+            <ul>
+                <h1>Donghyun's Homepage</h1>
+                <li><a href="index.html">홈</a></li>
+                <li><a href="interest.html">관심분야</a></li>
+                <li><a href="board.html">게시판</a></li>
+                <li><a href="dev_introduce.html">개발자소개</a></li>
+                <li><a href="calendar.html">달력</a></li>
+                <li><a href="animation.html">애니메이션</a></li>
+                <li><a href="sign_up.html">회원가입</a></li>
+            </ul>
+        </div>
+        <div id="sidebar">
+            <p>USER LOGIN</p>
+            <form>
+                <table id="login">
+                    <tr>
+                        <td><input type="text"></td><td rowspan="2"><button type="submit" id="loginbutton">로그인</button></td>
+                    </tr>
+                    <tr>
+                        <td><input type="password"></td>
+                    </tr>
+                    <tr><td></td><td></td></tr>
+                    <tr><td></td><td></td></tr>     
+                </table>
+            </form>
+            <a href="sign_up.html"> &nbsp; &nbsp; 회원가입</a>
+            <a href=""> &nbsp; | &nbsp; ID/PW 찾기</a>
+        </div>
+        <div id="content">
+            <h2>5월 달력</h2>
+            <fieldset>
+                <div class="a2">일</div>
+                <div class="a1">월</div>
+                <div class="a1">화</div>
+                <div class="a1">수</div>
+                <div class="a1">목</div>
+                <div class="a1">금</div>
+                <div class="a1" style="color:blue;">토</div>
+
+                <div class="a4"></div>    
+                <div class="a1">1</div>
+                <div class="a1">2</div>
+                <div class="a1">3</div>
+                <div class="a1">4</div>
+                <div class="a3">5</div>
+                <div class="a1" style="color:blue;">6</div>
+
+                <div class="a2">7</div>
+                <div class="a1">8</div>
+                <div class="a1">9</div>
+                <div class="a1">10</div>
+                <div class="a1">11</div>
+                <div class="a1">12</div>
+                <div class="a1" style="color:blue;">13</div>
+
+                <div class="a2">14</div>
+                <div class="a1">15</div>
+                <div class="a1">16</div>
+                <div class="a1">17</div>
+                <div class="a1">18</div>
+                <div class="a1">19</div>
+                <div class="a1" style="color:blue;">20</div>
+
+                <div class="a2">21</div>
+                <div class="a1">22</div>
+                <div class="a1">23</div>
+                <div class="a1">24</div>
+                <div class="a1">25</div>
+                <div class="a1">26</div>
+                <div class="a3">27</div>
+
+                <div class="a2">28</div>
+                <div class="a1">29</div>
+                <div class="a1">30</div>
+                <div class="a1">31</div>
+                <div class="blank"></div>
+                <div class="blank"></div>
+                <div class="blank"></div>
+            </fieldset><br>
+        </div>
+        <div id="footer">
+            <hr>
+            <p>copyright gimdong58@gmail.com</p>
+        </div>
     </div>
-<hr><br>
-    <div class="a2">일</div>
-    <div class="a1">월</div>
-    <div class="a1">화</div>
-    <div class="a1">수</div>
-    <div class="a1">목</div>
-    <div class="a1">금</div>
-    <div class="a1">토</div>
-
-    <div class="a4"></div>    
-    <div class="a1">1</div>
-    <div class="a1">2</div>
-    <div class="a1">3</div>
-    <div class="a1">4</div>
-    <div class="a3">5</div>
-    <div class="a1">6</div>
-
-    <div class="a2">7</div>
-    <div class="a1">8</div>
-    <div class="a1">9</div>
-    <div class="a1">10</div>
-    <div class="a1">11</div>
-    <div class="a1">12</div>
-    <div class="a1">13</div>
-
-    <div class="a2">14</div>
-    <div class="a1">15</div>
-    <div class="a1">16</div>
-    <div class="a1">17</div>
-    <div class="a1">18</div>
-    <div class="a1">19</div>
-    <div class="a1">20</div>
-
-    <div class="a2">21</div>
-    <div class="a1">22</div>
-    <div class="a1">23</div>
-    <div class="a1">24</div>
-    <div class="a1">25</div>
-    <div class="a1">26</div>
-    <div class="a3">27</div>
-
-    <div class="a2">28</div>
-    <div class="a1">29</div>
-    <div class="a1">30</div>
-    <div class="a1">31</div>
-    <div class="blank"></div>
-    <div class="blank"></div>
-    <div class="blank"></div>
-<div id="foot">
-<br><hr>
-<p>copyright gimdong58@gmail.com</p>
-</div>
 </body>
 </html>
