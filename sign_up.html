@@ -8,12 +8,12 @@
         #signup {
             margin-left: auto;
             margin-right: auto;
-            border-top: 1px solid #444444;
+            border-top: 1px solid #bcbcbc;
             border-collapse: collapse;
             text-align: center;
         }
         #signup td,th {
-            border-bottom: 1px solid #444444;
+            border-bottom: 1px solid #bcbcbc;
             padding: 20px;
         }
         .content {
@@ -25,54 +25,56 @@
             -webkit-appearance: none;
             margin: 0;
         }
-        .number {
-            width:50px;
+        button {
+            background-color:rgb(97, 97, 97);
+            height: 32px;
+            color: white;
+            border-radius: 6px;
         }
-        .text {
-            width: 100px;
+        input[type="text"], input[type="password"] {
+            width: 200px;
+            height: 32px;
+            padding: 0 10px;
+            box-sizing: border-box;
+            border-radius: 6px;
+            background-color: #F8F8F8;
+        }
+        input[type="number"] {
+            width: 60px;
+            height: 32px;
+            padding: 0 10px;
+            box-sizing: border-box;
+            border-radius: 6px;
+            background-color: #F8F8F8;
+        }
+        button:hover {
+            background: rgb(128, 128, 128);
         }
     </style>
 </head>
 <body>
     <div id="container">
         <div id="header">
-            <h1>Donghyun's Homepage</h1>
             <ul>
                 <li><a href="index.html">홈</a></li>
                 <li><a href="interest.html">관심분야</a></li>
-                <li><a href="board.html">게시판</a></li>
+                <li><a href="board.html">자유게시판</a></li>
                 <li><a href="dev_introduce.html">개발자소개</a></li>
                 <li><a href="calendar.html">달력</a></li>
                 <li><a href="animation.html">애니메이션</a></li>
                 <li><a href="sign_up.html">회원가입</a></li>
             </ul>
-        </div>
-        <div id="sidebar">
-            <p>USER LOGIN</p>
-            <form>
-                <table id="login">
-                    <tr>
-                        <td><input type="text"></td><td rowspan="2"><button type="submit" id="loginbutton">로그인</button></td>
-                    </tr>
-                    <tr>
-                        <td><input type="password"></td>
-                    </tr>   
-                    <tr><td></td><td></td></tr>
-                    <tr><td></td><td></td></tr>   
-                </table>
-            </form>
-            <a href="sign_up.html"> &nbsp; &nbsp; 회원가입</a>
-            <a href=""> &nbsp; | &nbsp; ID/PW 찾기</a>
+            <img src="images/강아지들.jpg">
         </div>
         <div id="content">
             <h2>회원가입</h2>
             <form>
                 <table id="signup">
                     <tr>
-                        <td class="title">아이디</td><td class="content"><input type="text"> <button type="button">중복확인</button> &nbsp;4자~12자리의 영문자, 숫자 / @,#$등 특수문자는 제외</td>
+                        <td class="title">아이디</td><td class="content"><input type="text" placeholder="아이디"> <button type="button">중복확인</button> &nbsp;4자~12자리의 영문자, 숫자 / @,#$등 특수문자는 제외</td>
                     </tr>
                     <tr>
-                        <td>이름</td><td class="content"><input type="text"></td>
+                        <td>이름</td><td class="content"><input type="text" placeholder="이름"></td>
                     </tr>
                     <tr>
                         <td>이메일</td><td class="content"><input type="text" class="text"> @ <input type="text" class="text">
@@ -86,13 +88,13 @@
                             </select></td>
                     </tr>
                     <tr>
-                        <td>휴대전화</td><td class="content"><input type=number class="number"> - <input type=number class="number"> - <input type=number class="number"> &nbsp;주문배송문자, ARS 상담/중고매장 이용시 본인확인용으로 사용</td>
+                        <td>휴대전화</td><td class="content"><input type="number"> - <input type="number"> - <input type="number"> &nbsp;주문배송문자, ARS 상담/중고매장 이용시 본인확인용으로 사용</td>
                     </tr>
                     <tr>
-                        <td>비밀번호</td><td class="content"><input type="password"> &nbsp;영문, 숫자, 특수문자 중 2가지 조합하여 8자~20자리</td>
+                        <td>비밀번호</td><td class="content"><input type="password" placeholder="비밀번호"> &nbsp;영문, 숫자, 특수문자 중 2가지 조합하여 8자~20자리</td>
                     </tr>
                     <tr>
-                        <td>비밀번호 재입력</td><td class="content"><input type="password"></td>
+                        <td>비밀번호 재입력</td><td class="content"><input type="password" placeholder="비밀번호 재입력"></td>
                     </tr>
                     <tr>
                         <td>개인정보 유효기간</td><td class="content">1년<input type="radio" name="a" checked>&nbsp;&nbsp;&nbsp;3년<input type="radio" name="a" checked>&nbsp;&nbsp;&nbsp;5년<input type="radio" name="a" checked>&nbsp;&nbsp;&nbsp;탈퇴 시까지<input type="radio" name="a" checked><br><br>
@@ -102,7 +104,7 @@
                 <div style=" text-align: center;">
                     <button style=" display: inline-block;">회원가입</button>
                 </div>
-            </form><br>
+            </form>
         </div>
         <div id="footer">
             <hr>
