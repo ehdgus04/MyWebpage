@@ -13,6 +13,7 @@
             height: 360px;
             margin: 0px;
             box-sizing: border-box;
+            display: inline-block;
         }
         .login-wrapper > h2{
             text-align: left;
@@ -46,6 +47,38 @@
             background-color: rgb(97, 97, 97);
             margin-top: 20px;
         }
+        .content2 {
+            border: 1px solid black;
+            width: 457px;
+            height: 300px;
+            margin-left: 40px;
+            padding: 30px;
+            padding-top: 20px;
+            float:right;
+        }
+        h3 {
+            margin-top: 10px;
+        }
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            border-top: 1px solid #bcbcbc;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        td {
+            border-bottom: 1px solid #bcbcbc;
+            padding: 20px;
+        }
+        #line2 {
+            border: 1px solid black;
+            width: 457px;
+            height: 300px;
+            margin-left: 40px;
+            padding: 30px;
+            padding-top: 20px;
+            clear: both;
+        }
     </style>
 </head>
 <body>
@@ -63,6 +96,40 @@
             <img src="images/강아지들.jpg">
         </div>
         <div id="content">
+            <div class="content2">
+                <h3>공지사항</h2>
+                <table>
+                    <tr>
+                        <td>1</td><td class="title"><a href="board_1.html">안녕하세요</a></td><td>김동현</td><td>2023-05-23</td><td>1</td>
+                    </tr>
+                    <tr>
+                        <td>2</td><td class="title"><a href="board_1.html">안녕하세요</a></td><td>김재서</td><td>2023-05-23</td><td>1</td>
+                    </tr>
+                    <tr>
+                        <td>3</td><td class="title"><a href="board_1.html">안녕하세요</a></td><td>황대원</td><td>2023-05-23</td><td>1</td>
+                    </tr>
+                    <tr>
+                        <td>4</td><td class="title"><a href="board_1.html">안녕하세요</a></td><td>손현준</td><td>2023-05-23</td><td>1</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="content2">
+                <h3>자유게시판</h2>
+                <table>
+                    <tr>
+                        <td>1</td><td class="title"><a href="board_1.html">안녕하세요</a></td><td>김동현</td><td>2023-05-23</td><td>1</td>
+                    </tr>
+                    <tr>
+                        <td>2</td><td class="title"><a href="board_1.html">안녕하세요</a></td><td>김재서</td><td>2023-05-23</td><td>1</td>
+                    </tr>
+                    <tr>
+                        <td>3</td><td class="title"><a href="board_1.html">안녕하세요</a></td><td>황대원</td><td>2023-05-23</td><td>1</td>
+                    </tr>
+                    <tr>
+                        <td>4</td><td class="title"><a href="board_1.html">안녕하세요</a></td><td>손현준</td><td>2023-05-23</td><td>1</td>
+                    </tr>
+                </table>
+            </div>
             <div class="login-wrapper">
                 <h2>Login</h2>
                 <form id="login-form">
@@ -75,6 +142,9 @@
                     <a href="sign_up.html">회원가입</a>
                     <button type="submit">로그인</button>
                 </form>
+            </div>
+            <div id="line2">
+                gd
             </div>
         </div>
         <div id="footer">
