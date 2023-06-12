@@ -5,38 +5,39 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="frame.css">
     <style>
+        #content {
+            height: 590px;
+        }
         #content img {
-            width: 300px;
+            width: 250px;
+            margin-left: 20px;
             float: right;
         }
-        #content div {
+        h2 {
+            margin: 0px;
+            font-size: 30px;
+        }
+        h3 {
+            text-align: center;
+            padding-top: 20px;
+        }
+        #content1 div, #content2 div{
+            height: 270px;
+        }
+        #content1 p, #content2 p{
             text-align: center;
         }
-        #content li {
-            text-align: center;
+        #content1, #content2{
+            margin-left: auto;
+            margin-right: auto;
         }
-        #content1, #content2 {
-            width: 700px;
-            height: 350px;
-            display: inline-block;
-        }
-        #content1 h3, #content1 p, #content2 h3, #content2 p {
-            text-align: left;
+        #content1 {
+            float: left;
+            width: 720px;
         }
         #content2 {
-            float:right;
-        }
-        .interest_content {
-            width: 360px;
-            height: 300px;
-            padding-top: 30px;
-            margin-right: 30px;
-        }
-        .interest_content2 {
-            width: 360px;
-            height: 300px;
-            padding: 50px 0;
-            margin-right: 30px;
+            float: right;
+            width: 720px;
         }
     </style>
 </head>
@@ -55,67 +56,37 @@
             <img src="images/강아지들.jpg">
         </div>
         <div id="content">
+            <h2>강아지 실내놀이 4가지</h2>
             <div id="content1">
-                <h2>한국에서 가장 인기가 많은 반려견들</h2>
-                <div>
-                    <img src="images/말티즈.jpg">
-                    <div class="interest_content">
-                        <h3>1위. 말티즈</h3>
-                        <p>
-                            작고 귀여우며 근사한 털을 지닌 말티즈는 성격도 다정하고 무던합니다. 보호자와 유대감도 깊어 반려견으로서 더할 나위 없지요. 또 체고가 최대 23cm로 무릎에 앉힐 수 있는 작은 토이 품종이라 할리우드 스타부터 왕족까지 수많은 사람들의 사랑을 독차지하곤 합니다.<br><br>
-                            탄생지: 이탈리아
-                        </p>
-                    </div>
-                </div>
-                <div>
-                    <img src="images/포메라니안.jpg">
-                    <div class="interest_content">
-                        <h3>2위. 포메라니안</h3>
-                        <p>
-                            포메라니안은 미소를 지은 듯한 표정, 풍성한 털과 갈기, 복슬복슬한 꼬리가 멋진 견종입니다. 겉모습만 보고는 썰매견의 후손이라는 점을 쉽게 상상하기 어렵죠. 영리하고 발랄하며 넘치는 에너지를 지니고 있는 포메라니안은 늘 낯선 사람을 경계하기 때문에 경비견의 역할에 잘 어울립니다.<br><br>
-                            탄생지: 독일
-                    </p>
-                    </div>
-                </div>
-                <div>
-                    <img src="images/푸들.jpg">
-                    <div class="interest_content">
-                        <h3>3위. 푸들</h3>
-                        <p>
-                            흔히 푸들하면 마치 슈퍼 모델 같이 잘 갖춰진 헤어 스타일과 품위 있는 빠른 걸음 등을 떠올리곤 합니다. 사실 푸들은 멋진 겉모습 이외에도 많은 매력을 지니고 있습니다. 푸들은 과거 물새 사냥에 활용되었던 깊은 역사를 지닌 견종으로 영특하고 운동신경과 집중력이 좋습니다.<br><br>
-                            탄생지: 독일
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div id="content2">
-                <h2>강아지 실내놀이 4가지</h2>
                 <div>
                     <img src="images/노즈워크.jpg">
-                    <div class="interest_content2">
-                        <h3>1. 노즈워크</h3>
-                        <p>
-                            숨겨진 간식이나 사료를 찾으면서 후각을 자극하는 놀이입니다. 후각을 사용하다보면 스트레스가 풀린다고 합니다. 노즈워크 장난감이 없어도 쉽게 할 수 있습니다.
-                        </p>
-                    </div>
+                    <h3>노즈워크</h3>
+                    <p>
+                        숨겨진 간식이나 사료를 찾으면서 후각을 자극하는 실내놀이입니다.<br>강아지는 후각을 사용하다 보면 스트레스가 풀린다.<br>노즈워크 장난감이 없어도 쉽게 할 수 있습니다.<br>노즈워크는 분리불안이 있거나 산만한 강아지도<br>실내놀이로 집중할 수 있는 시간을 길러 줄 수 있습니다.
+                    </p>
                 </div>
                 <div>
                     <img src="images/터그놀이.jpg">
-                    <div class="interest_content2">
-                        <h3>2. 터그놀이</h3>
-                        <p>
-                            강아지가 물고 있는 장남감을 줄다리기 하듯이 당겨주는 놀이로 좁은 공간에서도 충분히 가능합니다. 터그놀이를 하다보면 보호자님과 교감이 강해진다고 합니다.
-                        </p>
-                    </div>
+                    <h3>터그놀이</h3>
+                    <p>
+                        강아지가 에너지 발산하기 딱 좋은 놀이는 터그놀이입니다.<br> 강아지가 물고 있는 장난감을 줄다리기하듯이<br>당겨주는 놀이로 좁은 공간에서도 충분히 가능한 실내놀이입니다.<br>터그놀이를 통해 보호자님과 강아지 사이의 교감이 강해진다.
+                    </p>
                 </div>
+            </div>
+            <div id="content2">
                 <div>
                     <img src="images/공놀이.jpg">
-                    <div class="interest_content2">
-                        <h3>3. 공놀이</h3>
-                        <p>
-                            장난감이나 공을 던져주고 물어오게 하는 놀이입니다. 던진 물건을 잡으려 움직이면서 강아지의 활동량을 채울 수 있습니다.
-                        </p>
-                    </div>
+                    <h3>공놀이</h3>
+                    <p>
+                        장난감이나 공을 던져주고 물어오게 하는 놀이입니다.<br>던진 물건을 잡으려 움직이면서 강아지의 활동량을 채울 수 있습니다.<br>그러나 공놀이를 반복하다 보면 지루해할 수 있습니다.<br>장난감을 물어올 때마다 칭찬과 보상을 주면서<br>실내놀이에 흥미를 잃지 않도록 하는 것이 중요합니다.
+                    </p>
+                </div>
+                <div>
+                    <img src="images/컵놀이.png">
+                    <h3>컵놀이</h3>
+                    <p>
+                        여러 개의 컵 중 한 개의 컵에만 간식을 넣고 컵을 뒤집어서 섞은 뒤 강아지가 찾도록 하는 실내놀이입니다.<br>집중력과 두뇌 자극에 효과적인 놀이입니다.<br>강아지가 간식을 찾으면 칭찬과 함께 간식을 주면 됩니다.<br>만일 처음 하는 게임이거나 강아지가 어려워한다면,<br>컵 개수를 줄여서 시작하거나 어느 컵에 간식을 넣는지 보여주는 것도 좋은 방법입니다.
+                    </p>
                 </div>
             </div>
         </div>

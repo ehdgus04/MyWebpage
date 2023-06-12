@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="frame.css">
     <style>
+        .content2 a {
+            color: black;
+        }
         .login-wrapper{
             border: 1px solid black;
             padding: 30px;
@@ -28,7 +31,7 @@
             margin-bottom: 15px;
             border-radius: 6px;
         }
-        a {
+        #login-form a {
             color: gray;
         }
         #remember-check {
@@ -74,19 +77,18 @@
             border: 0px solid black;
             width: 1416px;
             height: auto;
-            margin-top: 40px;
             padding: 30px;
             padding-top: 20px;
             text-align: center;
             clear: both;
         }
         #line2 img {
-            width: 413px;
+            width: 350px;
             display: block;
         }
         .list .caption {
-            width: 413px;
-            padding: 115.44px 0;
+            width: 350px;
+            padding: 83.3px 0;
             position: absolute;
             background: rgba(0,0,0,0.6);
             opacity: 0;
@@ -98,11 +100,11 @@
         }
         .list li:hover .caption {
             opacity: 1;
-            -moz-transform: translateY(-414px);
-            -ms-transform: translateY(-414px);
-            -o-trnasform: translateY(-414px);
-            -webkit-transform: translateY(-414px);
-            transform: translateY(-414px);
+            -moz-transform: translateY(-350px);
+            -ms-transform: translateY(-350px);
+            -o-trnasform: translateY(-350px);
+            -webkit-transform: translateY(-350px);
+            transform: translateY(-350px);
         }
         .list {
             padding-left: 0px;
@@ -119,6 +121,18 @@
         .content2 .title {
             width: 200px;
             text-align: left;
+        }
+        fieldset {
+            margin-right: auto;
+            margin-left: auto;
+            padding-bottom: 35px;
+            padding-left: 40px;
+            padding-right: 40px;
+            border: 1px solid black;
+            width: 1126px;
+        }
+        legend {
+            text-align: center;
         }
     </style>
 </head>
@@ -182,15 +196,23 @@
                         <input type="checkbox" id="remember-check">아이디 저장하기
                     </label><br>
                     <a href="">아이디/비밀번호 찾기</a>
+                    &nbsp;&nbsp;&nbsp;
                     <a href="sign_up.html">회원가입</a>
                     <button type="submit">로그인</button>
                 </form>
             </div>
+            <div>
+                <fieldset>
+                    <legend><h2>추천 유튜브 영상</h2></legend>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rdnZGiYm2mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/o32faIi1FKE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </fieldset>
+            </div>
             <div id="line2">
-                <h3>우리집 멍멍이들</h3>
+                <h2>우리집 멍멍이들</h2>
                 <ul class="list">
                     <li>
-                        <img src="images/돌이.jpg" >
+                        <img src="images/돌이.jpg" style="margin-right: 60px;">
                         <div class="caption">
                             <h2>돌이</h2>
                             <p>나이: 10살</p>
@@ -199,7 +221,7 @@
                         </div>
                     </li>
                     <li>
-                        <img src="images/아지.jpg">
+                        <img src="images/아지.jpg" style="margin-right: 60px;">
                         <div class="caption">
                             <h2>아지</h2>
                             <p>나이: 10살</p>
